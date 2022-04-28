@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.view.Controller">
+   <children>
+      <Button fx:id="buttonLoad" layoutX="22.0" layoutY="17.0" mnemonicParsing="false" onAction="#loadButtonClicked" prefHeight="45.0" prefWidth="117.0" text="%key.Load">
+         <effect>
+            <DropShadow height="3.41" radius="1.9375" width="6.34" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="switchButton" layoutX="157.0" layoutY="17.0" mnemonicParsing="false" onAction="#switchLanguage" prefHeight="45.0" prefWidth="117.0" text="%key.changeLang">
+         <effect>
+            <DropShadow height="3.17" radius="1.8775" width="6.34" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="100.0" layoutY="93.0" mnemonicParsing="false" onAction="#createNewBoard" prefHeight="194.0" prefWidth="298.0" text="%key.Full" AnchorPane.bottomAnchor="313.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="422.0" AnchorPane.topAnchor="93.0">
+         <font>
+            <Font name="Calibri Light" size="38.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color green="0.4833333194255829" blue="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="100.0" layoutY="332.0" mnemonicParsing="false" onAction="#createNewMedium" prefHeight="194.0" prefWidth="298.0" text="%key.Med" AnchorPane.bottomAnchor="74.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="422.0" AnchorPane.topAnchor="332.0">
+         <font>
+            <Font name="Calibri Light" size="38.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="1.0" green="0.8833333253860474" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button layoutX="422.0" layoutY="93.0" mnemonicParsing="false" onAction="#createNewEasy" prefHeight="194.0" prefWidth="298.0" text="%key.Easy" AnchorPane.bottomAnchor="313.0" AnchorPane.leftAnchor="422.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="93.0">
+         <font>
+            <Font name="Calibri Light" size="38.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.1535087674856186" green="0.7368420958518982" blue="0.28961989283561707" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button layoutX="422.0" layoutY="332.0" mnemonicParsing="false" onAction="#createNewHard" prefHeight="194.0" prefWidth="298.0" text="%key.Hard" AnchorPane.bottomAnchor="74.0" AnchorPane.leftAnchor="422.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="332.0">
+         <font>
+            <Font name="Calibri Light" size="38.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.8421052694320679" green="0.03118908405303955" blue="0.03118908405303955" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Text layoutX="300.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sudoku" textAlignment="CENTER" wrappingWidth="200.01953125">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Text>
+      <Button layoutX="662.0" layoutY="541.0" mnemonicParsing="false" onAction="#showAuthors" prefHeight="45.0" prefWidth="117.0" text="%key.showAuthors">
+         <effect>
+            <DropShadow height="9.28" radius="4.14" width="9.28" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <ImageView fitHeight="71.0" fitWidth="69.0" layoutX="723.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icon.png" />
+         </image>
+         <effect>
+            <Glow />
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>
